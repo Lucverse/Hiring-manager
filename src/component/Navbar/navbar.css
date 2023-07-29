@@ -1,0 +1,82 @@
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Hack, monospace;
+  background-color: #98eecc;
+  padding: 15px 20px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.links {
+  display: flex;
+  gap: 100px;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.profile {
+  position: relative;
+  margin-left: 10px;
+}
+
+.profile img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: -50px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-content a,
+.logout-button {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.logout-button {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-align: left;
+  padding: 5px;
+  cursor: pointer;
+}
+@media (min-width: 680px) {
+  .links {
+    padding-right: 50px;
+  }
+}
+@media (max-width: 650px) {
+  .links {
+    gap: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .links {
+    gap: 5px;
+  }
+}
